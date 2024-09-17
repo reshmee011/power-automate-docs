@@ -46,7 +46,7 @@ As part of this process, in four easy and quick steps, you'll first list deleted
 
     1. Select **New Step**.
     
-    1. Search for **Power Automate Management Connector** or **List Flows as Admin** action.
+    1. Search for **Power Automate Management Connector** or **List Flows as Admin ** action.
     
     1. Select the **List Flows as Admin** action.
     
@@ -55,6 +55,10 @@ As part of this process, in four easy and quick steps, you'll first list deleted
     1. In the **Include Soft-Deleted Flows** dropdown menu, select **Yes**.
 
     :::image type="content" source="./media/restore-deleted-flow/list-flows-admin.png" alt-text="Screenshot of adding the 'List Flows as Admin' action.":::
+    
+    1. In the **settings** tab, enable **Pagination** and set **Threshold** to return more flows in case the deleted flow is not found in the list of flow
+        
+    :::image type="content" source="./media/restore-deleted-flow/list-flows-admin-pagination.png" alt-text="Screenshot of updating the 'List Flows as Admin Pagination' settings action.":::
 
 1. Run the flow to note the `flowName` of the flow you want to retrieve.
 
